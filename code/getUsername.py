@@ -1,6 +1,7 @@
+import subprocess
+import re
+
 def get_username_from_github():
-    import subprocess
-    import re
 
     remotes_string = subprocess.check_output(
             ["git", "remote", "-v"]
